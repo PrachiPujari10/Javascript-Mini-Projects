@@ -27,7 +27,7 @@ Welcome to my portfolio of various mini-applications built to practice and demon
 
 I am Prachi Pujari, a frontend developer passionate about building practical web applications.
 
-*   [GitHub Profile]([https://github.com](https://github.com/PrachiPujari10/Javascript-Mini-Projects))
+*   [GitHub Profile](https://github.com/PrachiPujari10)
 *   [LinkedIn Profile](www.linkedin.com/in/prachi-pujari-b060163a8)
 
 ---
