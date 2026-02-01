@@ -1,0 +1,122 @@
+/*
+ * 1. Theme Variables
+ * Define all colors here for easy switching
+ */
+:root {
+    --bg-color-main: #f4f7f9; /* Light grey background */
+    --bg-color-sidebar: #ffffff; /* White sidebar */
+    --text-color: #333333; /* Dark text */
+    --accent-color: #007bff; /* Blue for links/buttons */
+    --border-color: #dddddd;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+    --bg-color-main: #1e1e1e; /* Dark background */
+    --bg-color-sidebar: #2c2c2c; /* Darker grey sidebar */
+    --text-color: #f0f0f0; /* Light text */
+    --accent-color: #8c8cff; /* Lighter blue for links/buttons */
+    --border-color: #444444;
+}
+
+/*
+ * 2. General Styling & Theme Application
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Apply smooth transition to all color-related properties */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Layout sidebar and main content */
+    min-height: 100vh;
+    background-color: var(--bg-color-main);
+    color: var(--text-color);
+}
+
+/*
+ * 3. Sidebar Styling
+ */
+.sidebar {
+    width: 250px;
+    background-color: var(--bg-color-sidebar);
+    color: var(--text-color);
+    border-right: 1px solid var(--border-color);
+    padding: 20px;
+    flex-shrink: 0; /* Prevent it from shrinking */
+}
+
+.sidebar-header {
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.menu a:hover {
+    background-color: var(--border-color);
+}
+
+.menu a i {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+/*
+ * 4. Main Content
+ */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+/*
+ * 5. Theme Switcher Button
+ */
+.theme-switch-container {
+    margin-top: auto; /* Push the container to the bottom */
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+}
+
+#theme-toggle {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-toggle i {
+    margin-right: 8px;
+}

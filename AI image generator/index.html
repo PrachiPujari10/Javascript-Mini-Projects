@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Image Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Image Generator</h1>
+    
+    <input id="prompt" type="text" placeholder="Enter image description..." />
+    
+    <button onclick="generateImage()">Generate Image</button>
+    
+    <div class="loader" id="loader"></div>
+    
+    <div class="image-box">
+      <img id="result" />
+    </div>
+    
+    <button id="downloadBtn" onclick="downloadImage()" style="display:none;">Download Image</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

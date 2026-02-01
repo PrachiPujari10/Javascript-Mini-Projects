@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with Theme Switch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>My Dashboard</h3>
+        </div>
+        <ul class="menu">
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Analytics</a></li>
+            <li><a href="#"><i class="fas fa-users"></i> Users</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+        </ul>
+
+        <div class="theme-switch-container">
+            <button id="theme-toggle">
+                <i class="fas fa-sun"></i> <span class="theme-text">Light Mode</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h1>Welcome!</h1>
+        <p>Use the sidebar to navigate and the button below to switch themes.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
